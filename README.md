@@ -128,30 +128,15 @@
     </div>
 
     <div class="photo">
-      <!-- Updated to use your actual file -->
       <img src="Headshot.jpg" alt="Photo of Luca Capaldi">
     </div>
 
     <h2>Voice Demos</h2>
     <div class="demos">
       <div class="demo-item">
-        <p>Commercial Demo</p>
+        <p>Demo Reel</p>
         <audio controls>
-          <source src="demo-commercial.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="demo-item">
-        <p>Character Demo</p>
-        <audio controls>
-          <source src="demo-character.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="demo-item">
-        <p>Narration Demo</p>
-        <audio controls>
-          <source src="demo-narration.mp3" type="audio/mpeg">
+          <source src="Demo Reel.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
