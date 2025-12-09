@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #e6f0f8; /* softer background */
       color: #333;
     }
     header {
@@ -37,10 +37,12 @@
     section h2 {
       color: #2c3e50;
       margin-bottom: 20px;
+      text-align: center;
     }
     .bio {
       line-height: 1.6;
       font-size: 1.1em;
+      text-align: center; /* centered bio text */
     }
     .photo {
       text-align: center;
@@ -53,6 +55,7 @@
     }
     .demos {
       margin-top: 30px;
+      text-align: center;
     }
     .demo-item {
       margin-bottom: 20px;
@@ -131,7 +134,7 @@
       <img src="Headshot.jpg" alt="Photo of Luca Capaldi">
     </div>
 
-    <h2>Voice Demos</h2>
+    <h2>Voice Demo</h2>
     <div class="demos">
       <div class="demo-item">
         <p>Demo Reel</p>
