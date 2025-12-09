@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #2f3542; /* darker slate background */
+      background-color: #2f3542; /* slate background */
       color: #fff;
     }
     header {
@@ -32,7 +32,7 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      background: linear-gradient(135deg, #2c3e50, #34495e); /* same blue as header */
+      background: linear-gradient(135deg, #2c3e50, #34495e);
     }
     section h2 {
       color: #f1f1f1;
@@ -64,8 +64,22 @@
       width: 100%;
       outline: none;
     }
-    .projects {
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
       margin-top: 40px;
+    }
+    .box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 8px;
+      background: #1a252f;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .box h2 {
+      text-align: center;
+      color: #f1f1f1;
     }
     .project-item {
       display: flex;
@@ -88,13 +102,12 @@
     }
     .contact {
       text-align: center;
-      margin-top: 40px;
     }
     .contact a {
       display: inline-block;
       margin-top: 10px;
       padding: 12px 24px;
-      background: #1a252f;
+      background: #2c3e50;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -113,6 +126,12 @@
     footer p {
       margin: 0;
       font-size: 0.9em;
+    }
+    /* Hide stray text if it exists */
+    .hidden-text {
+      font-size: 0.1px;
+      color: transparent;
+      line-height: 0;
     }
   </style>
 </head>
@@ -145,28 +164,37 @@
       </div>
     </div>
 
-    <h2>Current Projects</h2>
-    <div class="projects">
-      <div class="project-item">
-        <img src="youtube-icon.png" alt="YouTube Icon">
-        <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+    <div class="flex-container">
+      <!-- Current Projects box -->
+      <div class="box">
+        <h2>Current Projects</h2>
+        <div class="project-item">
+          <img src="youtube-icon.png" alt="YouTube Icon">
+          <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+        </div>
+        <div class="project-item">
+          <img src="youtube-icon.png" alt="YouTube Icon">
+          <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
+        </div>
       </div>
-      <div class="project-item">
-        <img src="youtube-icon.png" alt="YouTube Icon">
-        <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
-      </div>
-    </div>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p>Interested in working together? Reach out to me via email:</p>
-      <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+      <!-- Contact box -->
+      <div class="box">
+        <h2>Contact</h2>
+        <div class="contact">
+          <p>Interested in working together? Reach out to me via email:</p>
+          <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Luca's Voice | All Rights Reserved</p>
   </footer>
+
+  <!-- Hidden stray text if it exists -->
+  <div class="hidden-text">Luca-sVoice <!DOCTYPE html></div>
 
 </body>
 </html>
