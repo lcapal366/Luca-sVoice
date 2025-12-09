@@ -61,23 +61,6 @@
       width: 100%;
       outline: none;
     }
-    .contact {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #2c3e50;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-    .contact a:hover {
-      background: #1a252f;
-    }
     .projects {
       margin-top: 40px;
     }
@@ -99,6 +82,23 @@
     }
     .project-item a:hover {
       color: #e74c3c;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .contact a:hover {
+      background: #1a252f;
     }
     footer {
       text-align: center;
@@ -128,8 +128,8 @@
     </div>
 
     <div class="photo">
-      <!-- Replace 'your-photo.jpg' with your actual photo file -->
-      <img src="your-photo.jpg" alt="Photo of Luca Capaldi">
+      <!-- Updated to use your actual file -->
+      <img src="Headshot.jpg" alt="Photo of Luca Capaldi">
     </div>
 
     <h2>Voice Demos</h2>
