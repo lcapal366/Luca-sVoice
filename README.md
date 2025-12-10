@@ -26,18 +26,24 @@
       font-size: 1.2em;
       margin-top: 10px;
     }
-    section {
-      max-width: 900px;
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
       margin: 40px auto;
+      max-width: 1200px;
+    }
+    .about-box {
+      flex: 2;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       background: linear-gradient(135deg, #2c3e50, #34495e);
     }
-    section h2 {
-      color: #f1f1f1;
-      margin-bottom: 20px;
+    .about-box h2 {
       text-align: center;
+      color: #f1f1f1;
     }
     .bio {
       line-height: 1.6;
@@ -64,20 +70,14 @@
       width: 100%;
       outline: none;
     }
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      margin-top: 40px;
-    }
-    .box {
+    .side-box {
       flex: 1;
       padding: 20px;
       border-radius: 8px;
       background: #1a252f;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    .box h2 {
+    .side-box h2 {
       text-align: center;
       color: #f1f1f1;
     }
@@ -142,52 +142,53 @@
     <p>Theatre-Born Voice Actor & Automotive Engineer</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="bio">
-      <p>Hey! I’m <strong>Luca Capaldi</strong>, a 22-year-old engineer, born in England and high schooled in the U.S., with 8 years of theatre and voice work experience. I’ve performed on stage and behind the mic in lots of productions.</p>
-      <p>Having lived and traveled around the world, I bring a flexible accent toolkit (native British, a comfortable American and Australian, as well as conversational Italian) to every role. I'm reliable, creative, and technically minded. My goal is to deliver authentic performances that make your projects shine.</p>
-    </div>
-
-    <div class="photo">
-      <img src="Headshot.jpg" alt="Photo of Luca Capaldi">
-    </div>
-
-    <h2>Voice Demo</h2>
-    <div class="demos">
-      <div class="demo-item">
-        <p>Demo Reel</p>
-        <audio controls>
-          <source src="Demo Reel.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+  <div class="main-container">
+    <!-- Left side box -->
+    <div class="side-box">
+      <h2>Current Projects</h2>
+      <div class="project-item">
+        <img src="youtube-icon.png" alt="YouTube Icon">
+        <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+      </div>
+      <div class="project-item">
+        <img src="youtube-icon.png" alt="YouTube Icon">
+        <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
       </div>
     </div>
 
-    <div class="flex-container">
-      <!-- Current Projects box -->
-      <div class="box">
-        <h2>Current Projects</h2>
-        <div class="project-item">
-          <img src="youtube-icon.png" alt="YouTube Icon">
-          <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
-        </div>
-        <div class="project-item">
-          <img src="youtube-icon.png" alt="YouTube Icon">
-          <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
-        </div>
+    <!-- Center about box -->
+    <div class="about-box">
+      <h2>About Me</h2>
+      <div class="bio">
+        <p>Hey! I’m <strong>Luca Capaldi</strong>, a 22-year-old engineer, born in England and high schooled in the U.S., with 8 years of theatre and voice work experience. I’ve performed on stage and behind the mic in lots of productions.</p>
+        <p>Having lived and traveled around the world, I bring a flexible accent toolkit (native British, a comfortable American and Australian, as well as conversational Italian) to every role. I'm reliable, creative, and technically minded. My goal is to deliver authentic performances that make your projects shine.</p>
       </div>
 
-      <!-- Contact box -->
-      <div class="box">
-        <h2>Contact</h2>
-        <div class="contact">
-          <p>Interested in working together? Reach out to me via email:</p>
-          <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+      <div class="photo">
+        <img src="Headshot.jpg" alt="Photo of Luca Capaldi">
+      </div>
+
+      <h2>Voice Demo</h2>
+      <div class="demos">
+        <div class="demo-item">
+          <p>Demo Reel</p>
+          <audio controls>
+            <source src="Demo Reel.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Right side box -->
+    <div class="side-box">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Interested in working together? Reach out to me via email:</p>
+        <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Luca's Voice | All Rights Reserved</p>
