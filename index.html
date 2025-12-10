@@ -1,9 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luca's Voice | Professional Voice Actor</title>
+
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background-color: #2f3542;
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(135deg,#2c3e50,#34495e);
+  padding:60px 20px;
+  text-align:center;
+}
+
+header h1 {
+  margin:0;
+  font-size:3em;
+}
+
+header p { margin-top:10px; font-size:1.2em; }
+
+.main-container {
+  display:flex;
+  gap:20px;
+  max-width:1400px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.left-column {
+  max-width:300px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.side-box {
+  background:#1a252f;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.side-box h2 {
+  text-align:center;
+}
+
+.project-item {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:15px;
+}
+
+.project-item img{
+  width:28px;
+}
+
+.project-item a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.project-item a:hover{
+  color:#e74c3c;
+}
+
+.contact {
+  text-align:center;
+}
+
+.contact a{
+  display:inline-block;
+  background:#2c3e50;
+  margin-top:10px;
+  padding:12px 25px;
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.contact a:hover{
+  background:#000;
+}
+
+.about-box {
+  flex:2.5;
+  padding:20px;
+  border-radius:8px;
+  background:linear-gradient(135deg,#2c3e50,#34495e);
+}
+
+.bio {
+  text-align:center;
+  line-height:1.6;
+  font-size:1.1em;
+}
+
+.photo{
+  margin:30px 0;
+  text-align:center;
+}
+
+.photo img {
+  max-width:200px;
+  border-radius:50%;
+  box-shadow:0 4px 10px rgba(0,0,0,.4);
+}
+
+.demos{text-align:center;}
+
+footer {
+  background:#2c3e50;
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+}
+</style>
 </head>
+
 <body>
-<h1>If you see only this text, cleanup worked.</h1>
+
+<header>
+  <h1>Luca's Voice</h1>
+  <p>Theatre-Born Voice Actor & Automotive Engineer</p>
+</header>
+
+<div class="main-container">
+
+  <div class="left-column">
+
+    <div class="side-box">
+      <h2>Current Projects</h2>
+
+      <div class="project-item">
+        <img src="youtube-icon.png">
+        <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+      </div>
+
+      <div class="project-item">
+        <img src="youtube-icon.png">
+        <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
+      </div>
+    </div>
+
+    <div class="side-box contact">
+      <h2>Contact</h2>
+      <p>Email me:</p>
+      <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+    </div>
+
+  </div>
+
+  <div class="about-box">
+    <h2>About Me</h2>
+
+    <div class="bio">
+      <p>Hey! I’m <strong>Luca Capaldi</strong>, a 22-year-old engineer with 8 years of theatre & voice experience.</p>
+
+      <p>I specialize in British, American, Australian and Italian accents and deliver authentic performances that elevate projects.</p>
+    </div>
+
+    <div class="photo">
+      <img src="Headshot.jpg">
+    </div>
+
+    <h2>Voice Demo</h2>
+
+    <div class="demos">
+      <audio controls>
+        <source src="Demo Reel.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+<p>&copy; 2025 Luca's Voice | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
