@@ -32,10 +32,10 @@
       align-items: flex-start;
       gap: 20px;
       margin: 40px auto;
-      max-width: 1200px;
+      max-width: 1400px; /* more breathing room */
     }
     .about-box {
-      flex: 2;
+      flex: 2.5; /* wider center box */
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -71,7 +71,8 @@
       outline: none;
     }
     .side-box {
-      flex: 1;
+      flex: 1; /* smaller side boxes */
+      max-width: 300px;
       padding: 20px;
       border-radius: 8px;
       background: #1a252f;
