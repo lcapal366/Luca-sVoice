@@ -46,16 +46,16 @@
       border-radius: 8px;
       background: #1a252f;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      text-align: center; /* center all text inside */
     }
     .side-box h2 {
+      text-align: center; /* headings centered */
       color: #f1f1f1;
       margin-bottom: 15px;
     }
     .project-item {
       display: flex;
       align-items: center;
-      justify-content: center; /* center horizontally */
+      justify-content: flex-start; /* keep links left-aligned */
       margin-bottom: 15px;
     }
     .project-item img {
@@ -71,6 +71,12 @@
     }
     .project-item a:hover {
       color: #e74c3c;
+    }
+    .contact {
+      text-align: center; /* center contact text and button */
+    }
+    .contact p {
+      margin-bottom: 10px;
     }
     .contact a {
       display: inline-block;
