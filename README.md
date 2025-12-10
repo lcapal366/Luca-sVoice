@@ -138,12 +138,7 @@
       margin: 0;
       font-size: 0.9em;
     }
-    /* Hide stray text if it exists */
-    .hidden-text {
-      font-size: 0.1px;
-      color: transparent;
-      line-height: 0;
-    }
+ 
   </style>
 </head>
 <body>
@@ -206,8 +201,6 @@
     <p>&copy; 2025 Luca's Voice | All Rights Reserved</p>
   </footer>
 
-  <!-- Hidden stray text if it exists -->
-  <div class="hidden-text">Luca-sVoice <!DOCTYPE html></div>
 
 </body>
 </html>
