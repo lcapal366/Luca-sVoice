@@ -32,10 +32,61 @@
       align-items: flex-start;
       gap: 20px;
       margin: 40px auto;
-      max-width: 1400px; /* more breathing room */
+      max-width: 1400px;
+    }
+    .left-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 300px;
+    }
+    .side-box {
+      padding: 20px;
+      border-radius: 8px;
+      background: #1a252f;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center; /* center all text inside */
+    }
+    .side-box h2 {
+      color: #f1f1f1;
+      margin-bottom: 15px;
+    }
+    .project-item {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* center horizontally */
+      margin-bottom: 15px;
+    }
+    .project-item img {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+    .project-item a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .project-item a:hover {
+      color: #e74c3c;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .contact a:hover {
+      background: #000;
     }
     .about-box {
-      flex: 2.5; /* wider center box */
+      flex: 2.5; /* bigger center box */
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -70,53 +121,6 @@
       width: 100%;
       outline: none;
     }
-    .side-box {
-      flex: 1; /* smaller side boxes */
-      max-width: 300px;
-      padding: 20px;
-      border-radius: 8px;
-      background: #1a252f;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    .side-box h2 {
-      text-align: center;
-      color: #f1f1f1;
-    }
-    .project-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-    .project-item img {
-      width: 28px;
-      height: 28px;
-      margin-right: 10px;
-    }
-    .project-item a {
-      color: #f1f1f1;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    .project-item a:hover {
-      color: #e74c3c;
-    }
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #2c3e50;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-    .contact a:hover {
-      background: #000;
-    }
     footer {
       text-align: center;
       padding: 20px;
@@ -144,16 +148,26 @@
   </header>
 
   <div class="main-container">
-    <!-- Left side box -->
-    <div class="side-box">
-      <h2>Current Projects</h2>
-      <div class="project-item">
-        <img src="youtube-icon.png" alt="YouTube Icon">
-        <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+    <!-- Left column with projects and contact stacked -->
+    <div class="left-column">
+      <div class="side-box">
+        <h2>Current Projects</h2>
+        <div class="project-item">
+          <img src="youtube-icon.png" alt="YouTube Icon">
+          <a href="https://www.youtube.com/@AnimeSimplyExplained" target="_blank">Anime Simply Explained</a>
+        </div>
+        <div class="project-item">
+          <img src="youtube-icon.png" alt="YouTube Icon">
+          <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
+        </div>
       </div>
-      <div class="project-item">
-        <img src="youtube-icon.png" alt="YouTube Icon">
-        <a href="https://www.youtube.com/@SajaBoysBlox" target="_blank">Saja Boys Blox</a>
+
+      <div class="side-box">
+        <h2>Contact</h2>
+        <div class="contact">
+          <p>Interested in working together? Reach out to me via email:</p>
+          <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
+        </div>
       </div>
     </div>
 
@@ -178,15 +192,6 @@
             Your browser does not support the audio element.
           </audio>
         </div>
-      </div>
-    </div>
-
-    <!-- Right side box -->
-    <div class="side-box">
-      <h2>Contact</h2>
-      <div class="contact">
-        <p>Interested in working together? Reach out to me via email:</p>
-        <a href="mailto:lcapal366@gmail.com">lcapal366@gmail.com</a>
       </div>
     </div>
   </div>
